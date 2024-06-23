@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Edit SIWI - SIWI App{% endblock %}
+
+{% block content %}
+    <h1>Edit SIWI</h1>
+    <form method="POST">
+        <div class="mb-3">
+            <textarea class="form-control" name="siwi_text" required>{{ siwi['siwi_text'] }}</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Update SIWI</button>
+    </form>
+{% endblock %}
